@@ -24,9 +24,4 @@ public class UserApplicationService {
         User user = userRepository.getUserByEmail(email);
         return user.isUserAuthorised(action);
     }
-
-    public String getUserPassword(String email) {
-        User user = userRepository.getUserByEmail(email);
-        return user.getPassword();
-    }
 }

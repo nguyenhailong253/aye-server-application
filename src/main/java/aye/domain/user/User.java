@@ -47,7 +47,7 @@ public class User {
         this.password = password;
     }
 
-    public boolean isEmailValid(String email) {
+    public static boolean isEmailValid(String email) {
         String regex = "^(.+)@(.+)$";
         Matcher pattern = Pattern.compile(regex).matcher(email);
         return pattern.matches();

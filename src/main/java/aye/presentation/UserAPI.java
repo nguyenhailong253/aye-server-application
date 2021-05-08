@@ -19,11 +19,6 @@ public class UserAPI {
         this.service = new UserApplicationService(userRepository);
     }
 
-    @GetMapping("/")
-    public String test() {
-        return service.getUserPassword("test.user1@hotmail.com");
-    }
-
     @PostMapping("/")
     public boolean authenticate(@RequestBody Map<String, String> body) {
         System.out.println("request body");
