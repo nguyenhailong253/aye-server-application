@@ -60,6 +60,10 @@ public class User {
             return staffActions.contains(action);
     }
 
+    public boolean verifyPassword(String password) {
+        return getPassword().equals(password);
+    }
+
     private List<Actions> getStaffActions() {
         List<Actions> actions = new ArrayList<>();
         actions.add(Actions.UPDATE_CATALOGUE);

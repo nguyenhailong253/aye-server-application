@@ -24,7 +24,7 @@ public class InMemoryUsers {
 
         User admin = new User(Role.STAFF);
         admin.setEmail("test.admin@hotmail.com");
-        admin.setPassword("654321");
+        admin.setPassword("123456");
 
         users.add(user1);
         users.add(user2);

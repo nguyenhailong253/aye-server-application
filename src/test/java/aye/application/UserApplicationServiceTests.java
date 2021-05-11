@@ -1,16 +1,12 @@
 package aye.application;
 
-import aye.domain.user.UserRepository;
-import aye.infrastructure.InMemoryUserRepository;
 import aye.utils.Actions;
-import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class UserApplicationServiceTests {
 
-    private static UserRepository userRepository = new InMemoryUserRepository();
-    private static UserApplicationService service = new UserApplicationService(userRepository);
+    private static UserApplicationService service = new UserApplicationService();
 
     public static class TestAuthenticateUser {
         @Test

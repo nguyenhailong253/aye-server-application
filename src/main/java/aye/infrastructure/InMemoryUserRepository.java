@@ -4,7 +4,6 @@ import aye.domain.user.User;
 import aye.domain.user.UserRepository;
 import aye.infrastructure.utils.InMemoryUsers;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class InMemoryUserRepository implements UserRepository {
