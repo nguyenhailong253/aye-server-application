@@ -22,7 +22,7 @@ public class CartItem {
     }
 
     public void setQuantity(int quantity) {
-        if (product.hasEnoughStock()) {
+        if (product.getHasEnoughStock()) {
             this.quantity = quantity;
         }
     }

@@ -14,6 +14,8 @@ public class Product {
         this.name = name;
     }
 
+    public Product() {}
+
     public int getPrice() {
         return price;
     }
@@ -22,7 +24,7 @@ public class Product {
         return name;
     }
 
-    public boolean hasEnoughStock() {
+    public boolean getHasEnoughStock() {
         return hasEnoughStock;
     }
 
@@ -32,5 +34,9 @@ public class Product {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public void setHasEnoughStock(boolean hasEnoughStock) {
+        this.hasEnoughStock = hasEnoughStock;
     }
 }

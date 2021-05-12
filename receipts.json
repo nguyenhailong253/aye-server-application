@@ -1,0 +1,27 @@
+[
+  {
+    "itemsPurchased": [
+      {
+        "product": {
+          "name": "iphone",
+          "price": 100,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "macbook",
+          "price": 10000,
+          "hasEnoughStock": true
+        },
+        "quantity": 2
+      }
+    ],
+    "totalPrice": 20100,
+    "amountPaid": 20100,
+    "paymentMethod": "Paypal",
+    "userEmail": "test.user1@hotmail.com",
+    "transactionDate": "2021/05/12 21:40:31"
+  }
+]

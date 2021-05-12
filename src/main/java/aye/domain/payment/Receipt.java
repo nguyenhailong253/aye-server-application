@@ -1,12 +1,14 @@
 package aye.domain.payment;
 
+import aye.domain.shoppingCart.CartItem;
 import aye.domain.shoppingCart.ShoppingCart;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 public class Receipt {
-    private ShoppingCart itemsPurchased;
+    private List<CartItem> itemsPurchased;
     private int totalPrice;
     private int amountPaid;
     private String paymentMethod;
@@ -14,7 +16,7 @@ public class Receipt {
     private String transactionDate;
 
     public Receipt(ShoppingCart cart, PaymentMethod paymentMethod) {
-        this.itemsPurchased = cart;
+        this.itemsPurchased = cart.getItems();
         this.totalPrice = cart.getTotalPrice();
         this.amountPaid = cart.getTotalPrice();
         this.paymentMethod = paymentMethod.getMethodName();
@@ -38,7 +40,7 @@ public class Receipt {
         return totalPrice;
     }
 
-    public ShoppingCart getItemsPurchased() {
+    public List<CartItem> getItemsPurchased() {
         return itemsPurchased;
     }
 
