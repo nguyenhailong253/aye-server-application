@@ -22,17 +22,20 @@ public class UserApplicationService {
         return false;
     }
 
-    public boolean isUserExisted(String email) {
+    private boolean isUserExisted(String email) {
         User user = userRepository.getUserByEmail(email);
-        if (user != null) return true;
-        return false;
+        return user != null;
     }
 
-    public void createAccount(String email, String password) {
+    public boolean createAccount(String email, String password) {
+        if (isUserExisted(email)) {
+            return false;
+        }
         User user = new User(Role.CUSTOMER);
         user.setEmail(email);
         user.setPassword(password);
         userRepository.addNewUser(user);
+        return true;
     }
 
     public boolean isUserAuthorised(String email, Actions action) {

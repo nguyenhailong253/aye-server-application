@@ -1,21 +1,15 @@
 package aye.presentation;
 
+import aye.application.PaymentApplicationService;
 import aye.application.ShoppingCartApplicationService;
+import aye.domain.payment.Receipt;
 import aye.domain.shoppingCart.ShoppingCart;
-import aye.domain.shoppingCart.ShoppingCartRepository;
-import aye.infrastructure.InMemoryShoppingCartRepository;
-import aye.utils.SimplifiedCart;
-import aye.utils.Utils;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.List;
 import java.util.Map;
 
-@SuppressWarnings("unchecked")
 @RestController
 @RequestMapping("/cart")
 public class ShoppingCartAPI {

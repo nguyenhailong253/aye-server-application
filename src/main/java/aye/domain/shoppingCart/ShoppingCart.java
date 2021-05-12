@@ -17,6 +17,8 @@ public class ShoppingCart {
         this.userEmail = email;
     }
 
+    public ShoppingCart() {}
+
     public List<CartItem> getItems() {
         return items;
     }

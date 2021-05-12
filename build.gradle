@@ -16,6 +16,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testCompile group: 'junit', name: 'junit', version: '4.12', "org.mockito:mockito-core:1.+"
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
 }
 
 test {

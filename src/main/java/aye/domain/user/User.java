@@ -23,6 +23,8 @@ public class User {
         customerActions = getCustomerActions();
     }
 
+    public User() {}
+
     public Role getRole() {
         return role;
     }

@@ -1,0 +1,80 @@
+[
+  {
+    "role": "CUSTOMER",
+    "email": "test.user1@hotmail.com",
+    "password": "123456",
+    "id": "f051ad14-b0f0-40ae-89f5-45e2527e4202",
+    "staffActions": [
+      "UPDATE_CATALOGUE",
+      "GENERATE_SALES_REPORT"
+    ],
+    "customerActions": [
+      "CHECK_OUT"
+    ]
+  },
+  {
+    "role": "CUSTOMER",
+    "email": "test.user2@hotmail.com",
+    "password": "123456",
+    "id": "b5484d47-3436-4f03-afb7-bc457ed50cd2",
+    "staffActions": [
+      "UPDATE_CATALOGUE",
+      "GENERATE_SALES_REPORT"
+    ],
+    "customerActions": [
+      "CHECK_OUT"
+    ]
+  },
+  {
+    "role": "CUSTOMER",
+    "email": "test.user3@hotmail.com",
+    "password": "123456",
+    "id": "bec42c13-608f-4e81-9e29-171b5437cd57",
+    "staffActions": [
+      "UPDATE_CATALOGUE",
+      "GENERATE_SALES_REPORT"
+    ],
+    "customerActions": [
+      "CHECK_OUT"
+    ]
+  },
+  {
+    "role": "STAFF",
+    "email": "test.admin@hotmail.com",
+    "password": "123456",
+    "id": "02017956-ca93-4b39-84e8-2c1b54c6091d",
+    "staffActions": [
+      "UPDATE_CATALOGUE",
+      "GENERATE_SALES_REPORT"
+    ],
+    "customerActions": [
+      "CHECK_OUT"
+    ]
+  },
+  {
+    "role": "CUSTOMER",
+    "email": "test.test@hotmail.com",
+    "password": "123456",
+    "id": "fec316fd-bdf9-4469-a47f-33f0523402a6",
+    "staffActions": [
+      "UPDATE_CATALOGUE",
+      "GENERATE_SALES_REPORT"
+    ],
+    "customerActions": [
+      "CHECK_OUT"
+    ]
+  },
+  {
+    "role": "CUSTOMER",
+    "email": "test.test.test@hotmail.com",
+    "password": "password",
+    "id": "027d6675-d02d-4f92-8862-10adc8560f5a",
+    "staffActions": [
+      "UPDATE_CATALOGUE",
+      "GENERATE_SALES_REPORT"
+    ],
+    "customerActions": [
+      "CHECK_OUT"
+    ]
+  }
+]

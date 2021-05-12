@@ -1,13 +1,12 @@
 package aye.presentation;
 
 import aye.application.UserApplicationService;
-import aye.domain.user.UserRepository;
-import aye.infrastructure.InMemoryUserRepository;
+import aye.domain.user.User;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -20,21 +19,16 @@ public class UserAPI {
         this.service = new UserApplicationService();
     }
 
-    @PostMapping("")
+    @PostMapping("/auth")
     public boolean authenticate(@RequestBody Map<String, String> body) {
         if (service.authenticateUser(body.get("email"), body.get("password")))
             return true;
         throw new ResponseStatusException(HttpStatus.FORBIDDEN, "Unable to authenticate");
     }
 
-    @PostMapping("/create")
+    @PostMapping("")
     public void createUserAccount(@RequestBody Map<String, String> body) {
-        String email = body.get("email");
-        String password = body.get("password");
-        if (!service.isUserExisted(email)) {
-            service.createAccount(email, password);
-            return;
-        }
-        throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Account already existed");
+        if (!service.createAccount(body.get("email"), ("password")))
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Account already existed");
     }
 }
