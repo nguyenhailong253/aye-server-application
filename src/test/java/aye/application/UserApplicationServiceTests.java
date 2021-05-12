@@ -1,6 +1,6 @@
 package aye.application;
 
-import aye.utils.Actions;
+import aye.domain.user.Actions;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

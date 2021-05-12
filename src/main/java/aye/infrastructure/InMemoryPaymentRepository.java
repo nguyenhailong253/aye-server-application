@@ -1,6 +1,5 @@
 package aye.infrastructure;
 
-import aye.domain.catalogue.Product;
 import aye.domain.payment.PaymentRepository;
 import aye.domain.payment.Receipt;
 import aye.domain.shoppingCart.CartItem;
@@ -53,7 +52,7 @@ public class InMemoryPaymentRepository implements PaymentRepository {
     }
 
     @Override
-    public List<Receipt> getReceiptsContainProductName(String productName) {
+    public List<Receipt> getReceiptsContainProductName(String productName, String period) {
         List<Receipt> results = new ArrayList<>();
 
         for (Receipt receipt: receipts) {

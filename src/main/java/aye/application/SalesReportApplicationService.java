@@ -15,7 +15,7 @@ public class SalesReportApplicationService {
     }
 
     public SalesReport generateSalesReportForAProduct(String productName, String period) {
-        List<Receipt> receipts = paymentRepository.getReceiptsContainProductName(productName);
+        List<Receipt> receipts = paymentRepository.getReceiptsContainProductName(productName, period);
         return new SalesReport(receipts, productName, period);
     }
 }

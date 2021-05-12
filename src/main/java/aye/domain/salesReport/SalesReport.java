@@ -1,6 +1,7 @@
 package aye.domain.salesReport;
 
 import aye.domain.payment.Receipt;
+import aye.domain.shoppingCart.CartItem;
 
 import java.util.List;
 
@@ -23,11 +24,25 @@ public class SalesReport {
     }
 
     private int calculateTotalSales() {
-        return 0;
+        int totalSale = 0;
+        for (Receipt receipt: receipts) {
+            for (CartItem item: receipt.getItemsPurchased()) {
+                if (item.getProduct().getName().equals(reportProductName))
+                    totalSale += item.getTotalPrice();
+            }
+        }
+        return totalSale;
     }
 
     private int calculateTotalQuantity() {
-        return 0;
+        int totalQuantity = 0;
+        for (Receipt receipt: receipts) {
+            for (CartItem item: receipt.getItemsPurchased()) {
+                if (item.getProduct().getName().equals(reportProductName))
+                    totalQuantity += item.getQuantity();
+            }
+        }
+        return totalQuantity;
     }
 
     public int getTotalQuantity() {

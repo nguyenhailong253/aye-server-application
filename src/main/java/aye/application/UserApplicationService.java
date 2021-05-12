@@ -4,7 +4,7 @@ import aye.domain.user.Role;
 import aye.domain.user.User;
 import aye.domain.user.UserRepository;
 import aye.infrastructure.InMemoryUserRepository;
-import aye.utils.Actions;
+import aye.domain.user.Actions;
 
 public class UserApplicationService {
 

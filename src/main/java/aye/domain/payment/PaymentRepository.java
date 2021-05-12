@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface PaymentRepository {
     void storeReceipt(Receipt receipt);
-    List<Receipt> getReceiptsContainProductName(String productName);
+    List<Receipt> getReceiptsContainProductName(String productName, String period);
 }

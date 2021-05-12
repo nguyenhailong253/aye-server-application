@@ -1,7 +1,5 @@
 package aye.domain.shoppingCart;
 
-import aye.domain.catalogue.Product;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;

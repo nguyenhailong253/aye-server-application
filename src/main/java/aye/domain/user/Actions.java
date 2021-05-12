@@ -1,4 +1,4 @@
-package aye.utils;
+package aye.domain.user;
 
 public enum Actions {
     GENERATE_SALES_REPORT,

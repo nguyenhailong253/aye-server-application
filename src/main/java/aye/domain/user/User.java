@@ -1,7 +1,5 @@
 package aye.domain.user;
 
-import aye.utils.Actions;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
