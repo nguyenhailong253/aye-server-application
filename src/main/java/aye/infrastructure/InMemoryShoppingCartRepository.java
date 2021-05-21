@@ -17,7 +17,7 @@ public class InMemoryShoppingCartRepository implements ShoppingCartRepository {
     private List<ShoppingCart> carts;
     private Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private final Type TYPE = new TypeToken<List<ShoppingCart>>(){}.getType();
-    private final String LOCAL_FILE_DATA = "shoppingCarts.json";
+    private final String LOCAL_FILE_NAME = "shoppingCarts.json";
 
     public InMemoryShoppingCartRepository() {
         readDataFromJson();
@@ -25,7 +25,7 @@ public class InMemoryShoppingCartRepository implements ShoppingCartRepository {
 
     private void readDataFromJson() {
         try {
-            JsonReader reader = new JsonReader(new FileReader(LOCAL_FILE_DATA));
+            JsonReader reader = new JsonReader(new FileReader(LOCAL_FILE_NAME));
             this.carts = gson.fromJson(reader, TYPE);
         } catch (Exception e) {
             e.printStackTrace();
@@ -34,7 +34,7 @@ public class InMemoryShoppingCartRepository implements ShoppingCartRepository {
 
     private void writeDataToJson() {
         try {
-            Writer writer = new FileWriter(LOCAL_FILE_DATA);
+            Writer writer = new FileWriter(LOCAL_FILE_NAME);
             gson.toJson(carts, writer);
             writer.flush();
             writer.close();

@@ -18,7 +18,7 @@ public class InMemoryUserRepository implements UserRepository {
     private List<User> users;
     private Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private final Type TYPE = new TypeToken<List<User>>(){}.getType();
-    private final String LOCAL_FILE_DATA = "users.json";
+    private final String LOCAL_FILE_NAME = "users.json";
 
     public InMemoryUserRepository() {
         readDataFromJson();
@@ -26,7 +26,7 @@ public class InMemoryUserRepository implements UserRepository {
 
     private void readDataFromJson() {
         try {
-            JsonReader reader = new JsonReader(new FileReader(LOCAL_FILE_DATA));
+            JsonReader reader = new JsonReader(new FileReader(LOCAL_FILE_NAME));
             this.users = gson.fromJson(reader, TYPE);
         } catch (Exception e) {
             e.printStackTrace();
@@ -35,7 +35,7 @@ public class InMemoryUserRepository implements UserRepository {
 
     private void writeDataToJson() {
         try {
-            Writer writer = new FileWriter(LOCAL_FILE_DATA);
+            Writer writer = new FileWriter(LOCAL_FILE_NAME);
             gson.toJson(users, writer);
             writer.flush();
             writer.close();

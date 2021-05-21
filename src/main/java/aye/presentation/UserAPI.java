@@ -7,6 +7,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.Map;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/users")
 public class UserAPI {
@@ -19,6 +20,7 @@ public class UserAPI {
 
     @PostMapping("/auth")
     public boolean authenticate(@RequestBody Map<String, String> body) {
+        System.out.println("Reached users/auth");
         if (service.authenticateUser(body.get("email"), body.get("password")))
             return true;
         throw new ResponseStatusException(HttpStatus.FORBIDDEN, "Unable to authenticate");

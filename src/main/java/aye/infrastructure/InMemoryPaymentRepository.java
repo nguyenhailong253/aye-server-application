@@ -19,7 +19,7 @@ public class InMemoryPaymentRepository implements PaymentRepository {
     private List<Receipt> receipts;
     private Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private final Type TYPE = new TypeToken<List<Receipt>>(){}.getType();
-    private final String LOCAL_FILE_DATA = "receipts.json";
+    private final String LOCAL_FILE_NAME = "receipts.json";
 
     public InMemoryPaymentRepository() {
         readDataFromJson();
@@ -27,7 +27,7 @@ public class InMemoryPaymentRepository implements PaymentRepository {
 
     private void readDataFromJson() {
         try {
-            JsonReader reader = new JsonReader(new FileReader(LOCAL_FILE_DATA));
+            JsonReader reader = new JsonReader(new FileReader(LOCAL_FILE_NAME));
             this.receipts = gson.fromJson(reader, TYPE);
         } catch (Exception e) {
             e.printStackTrace();
@@ -36,7 +36,7 @@ public class InMemoryPaymentRepository implements PaymentRepository {
 
     private void writeDataToJson() {
         try {
-            Writer writer = new FileWriter(LOCAL_FILE_DATA);
+            Writer writer = new FileWriter(LOCAL_FILE_NAME);
             gson.toJson(receipts, writer);
             writer.flush();
             writer.close();

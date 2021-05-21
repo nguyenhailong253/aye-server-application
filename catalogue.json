@@ -2,7 +2,7 @@
   "products": [
     {
       "name": "iphone",
-      "price": 100,
+      "price": 900,
       "hasEnoughStock": true
     },
     {

@@ -73,5 +73,303 @@
     "paymentMethod": "Paypal",
     "userEmail": "test.user1@hotmail.com",
     "transactionDate": "2021/05/13 09:25:00"
+  },
+  {
+    "itemsPurchased": [
+      {
+        "product": {
+          "name": "iphone",
+          "price": 100,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 100,
+    "amountPaid": 100,
+    "paymentMethod": "Paypal",
+    "userEmail": "test.user1@hotmail.com",
+    "transactionDate": "2021/05/14 15:51:14"
+  },
+  {
+    "itemsPurchased": [
+      {
+        "product": {
+          "name": "charger",
+          "price": 500,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "headphones",
+          "price": 2000,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2500,
+    "amountPaid": 2500,
+    "paymentMethod": "Paypal",
+    "userEmail": "test.user1@hotmail.com",
+    "transactionDate": "2021/05/14 18:56:55"
+  },
+  {
+    "itemsPurchased": [
+      {
+        "product": {
+          "name": "iphone",
+          "price": 100,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "macbook",
+          "price": 10000,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "headphones",
+          "price": 2000,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "charger",
+          "price": 500,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 12600,
+    "amountPaid": 12600,
+    "paymentMethod": "Paypal",
+    "userEmail": "test.user1@hotmail.com",
+    "transactionDate": "2021/05/14 19:03:38"
+  },
+  {
+    "itemsPurchased": [
+      {
+        "product": {
+          "name": "iphone",
+          "price": 100,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "macbook",
+          "price": 10000,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "headphones",
+          "price": 2000,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "charger",
+          "price": 500,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 12600,
+    "amountPaid": 12600,
+    "paymentMethod": "Paypal",
+    "userEmail": "test.user1@hotmail.com",
+    "transactionDate": "2021/05/14 19:17:08"
+  },
+  {
+    "itemsPurchased": [
+      {
+        "product": {
+          "name": "iphone",
+          "price": 100,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "macbook",
+          "price": 10000,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 10100,
+    "amountPaid": 10100,
+    "paymentMethod": "Paypal",
+    "userEmail": "test.user1@hotmail.com",
+    "transactionDate": "2021/05/14 19:34:42"
+  },
+  {
+    "itemsPurchased": [
+      {
+        "product": {
+          "name": "iphone",
+          "price": 100,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "macbook",
+          "price": 10000,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "headphones",
+          "price": 2000,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "charger",
+          "price": 500,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 12600,
+    "amountPaid": 12600,
+    "paymentMethod": "Paypal",
+    "userEmail": "test.user1@hotmail.com",
+    "transactionDate": "2021/05/14 19:38:21"
+  },
+  {
+    "itemsPurchased": [
+      {
+        "product": {
+          "name": "iphone",
+          "price": 100,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "macbook",
+          "price": 10000,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "charger",
+          "price": 500,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "headphones",
+          "price": 2000,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 12600,
+    "amountPaid": 12600,
+    "paymentMethod": "Paypal",
+    "userEmail": "test.test@hotmail.com",
+    "transactionDate": "2021/05/15 19:50:10"
+  },
+  {
+    "itemsPurchased": [
+      {
+        "product": {
+          "name": "iphone",
+          "price": 100,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "charger",
+          "price": 500,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 600,
+    "amountPaid": 600,
+    "paymentMethod": "Paypal",
+    "userEmail": "test.test@hotmail.com",
+    "transactionDate": "2021/05/15 20:16:44"
+  },
+  {
+    "itemsPurchased": [
+      {
+        "product": {
+          "name": "headphones",
+          "price": 2000,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2000,
+    "amountPaid": 2000,
+    "paymentMethod": "Paypal",
+    "userEmail": "test.user1@hotmail.com",
+    "transactionDate": "2021/05/15 22:13:26"
+  },
+  {
+    "itemsPurchased": [
+      {
+        "product": {
+          "name": "iphone",
+          "price": 900,
+          "hasEnoughStock": true
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "name": "macbook",
+          "price": 10000,
+          "hasEnoughStock": true
+        },
+        "quantity": 2
+      }
+    ],
+    "totalPrice": 20900,
+    "amountPaid": 20900,
+    "paymentMethod": "Paypal",
+    "userEmail": "test.user1@hotmail.com",
+    "transactionDate": "2021/05/21 10:41:44"
   }
 ]

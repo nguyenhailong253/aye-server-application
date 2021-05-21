@@ -5,14 +5,12 @@ import aye.application.UserApplicationService;
 import aye.domain.payment.Receipt;
 import aye.domain.user.Actions;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.Map;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/payment")
 public class PaymentAPI {

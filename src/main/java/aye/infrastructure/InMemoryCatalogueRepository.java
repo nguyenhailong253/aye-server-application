@@ -17,7 +17,7 @@ public class InMemoryCatalogueRepository implements CatalogueRepository {
     private Catalogue catalogue;
     private Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private final Type TYPE = new TypeToken<Catalogue>(){}.getType();
-    private final String LOCAL_FILE_DATA = "catalogue.json";
+    private final String LOCAL_FILE_NAME = "catalogue.json";
 
     public InMemoryCatalogueRepository() {
         readDataFromJson();
@@ -25,7 +25,7 @@ public class InMemoryCatalogueRepository implements CatalogueRepository {
 
     private void readDataFromJson() {
         try {
-            JsonReader reader = new JsonReader(new FileReader(LOCAL_FILE_DATA));
+            JsonReader reader = new JsonReader(new FileReader(LOCAL_FILE_NAME));
             this.catalogue = gson.fromJson(reader, TYPE);
         } catch (Exception e) {
             e.printStackTrace();
@@ -34,7 +34,7 @@ public class InMemoryCatalogueRepository implements CatalogueRepository {
 
     private void writeDataToJson() {
         try {
-            Writer writer = new FileWriter(LOCAL_FILE_DATA);
+            Writer writer = new FileWriter(LOCAL_FILE_NAME);
             gson.toJson(catalogue, writer);
             writer.flush();
             writer.close();

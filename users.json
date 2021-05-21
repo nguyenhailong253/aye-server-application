@@ -76,5 +76,31 @@
     "customerActions": [
       "CHECK_OUT"
     ]
+  },
+  {
+    "role": "CUSTOMER",
+    "email": "hello.world@gmail.com",
+    "password": "password",
+    "id": "a7a8e62d-4d06-4f9e-b9e4-4b4dbdf003a8",
+    "staffActions": [
+      "UPDATE_CATALOGUE",
+      "GENERATE_SALES_REPORT"
+    ],
+    "customerActions": [
+      "CHECK_OUT"
+    ]
+  },
+  {
+    "role": "CUSTOMER",
+    "email": "this.is.a.new.email@gmail.com",
+    "password": "password",
+    "id": "6f504ecf-1643-46dd-aae7-310deec38807",
+    "staffActions": [
+      "UPDATE_CATALOGUE",
+      "GENERATE_SALES_REPORT"
+    ],
+    "customerActions": [
+      "CHECK_OUT"
+    ]
   }
 ]

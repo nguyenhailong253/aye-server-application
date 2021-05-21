@@ -10,6 +10,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.Map;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/cart")
 public class ShoppingCartAPI {
